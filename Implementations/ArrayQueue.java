@@ -46,6 +46,7 @@ public class ArrayQueue<T> implements queue<T>{
 			}
 		return array[first];}
 
+	//Client testing code
 	public static void main(String[] args){
 		queue<String> queue = new ArrayQueue<String>();
 		queue.enqueue("Hi");
