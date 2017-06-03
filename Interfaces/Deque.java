@@ -1,4 +1,4 @@
-public interface deque<T> {
+public interface Deque<T> {
 	
 	public void addFront(T item);
 
