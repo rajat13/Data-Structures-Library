@@ -1,13 +1,13 @@
-public class Arraydeque<T> implements deque<T>{
+public class ArrayDeque<T> implements deque<T>{
 	private int first,size;
 	public static final int CAPACITY = 10;
 	private T[] array;
 
-	public Arraydeque(){
+	public ArrayDeque(){
 		this(CAPACITY);
 		}
 
-	public Arraydeque(int capacity){
+	public ArrayDeque(int capacity){
 		first = 0;
 		array = (T[]) new Object[capacity];
 		size = 0;
@@ -75,7 +75,7 @@ public class Arraydeque<T> implements deque<T>{
 		return array[position];
 		}
 	public static void main(String[] args){
-		deque<String> d = new Arraydeque<String>();
+		Deque<String> d = new ArrayDeque<String>();
 		d.addFront("Goyal");
 		d.addFront("Rajat");
 		d.addLast("Is");
